@@ -33,7 +33,7 @@ public class Search{
             }
         });
        }
-    private void loadPosts(String title,String year,String cell,String description) {
+private void loadPosts(String title,String year,String cell,String description) {
 
         query = mDatabase.orderByChild("title").startAt(title).endAt(title+"\uf8ff"); // \uf8ff is Unicode character in Java.
 	query = mDatabase.orderByChild("year").startAt(title).endAt(year+"\uf8ff");
